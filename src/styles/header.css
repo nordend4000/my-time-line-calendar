@@ -1,0 +1,68 @@
+@font-face {
+	font-family: "londrina";
+	src: url("../ressources/LondrinaOutline-Regular.ttf");
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100vw;
+	flex-wrap: nowrap;
+	margin-bottom: 20px;
+}
+.left-side-header {
+	flex-basis: 20%;
+	align-self: flex-start;
+	margin: 5px;
+}
+.header {
+	flex-basis: 40%;
+	align-self: center;
+	display: flex;
+	align-items: center;
+}
+
+.right-side-header {
+	margin-top: 10px;
+	flex-basis: 40%;
+	align-self: flex-start;
+	display: flex;
+	justify-content: center;
+}
+
+.title-app {
+	text-align: center;
+	font-family: londrina;
+	font-size: 1.8em;
+	margin-bottom: 10px;
+}
+.left-menu-icon {
+	color: rgb(6, 6, 6);
+	background-color: rgb(238, 235, 235);
+	font-size: 2.2em;
+	padding: 8px;
+	border-radius: 50%;
+}
+.left-menu-icon:hover {
+	cursor: pointer;
+}
+.btn.btn-header {
+	margin: 0px 10px;
+}
+/****************************************************************************************************************
+**********************************************  MEDIA QUERIES  **************************************************
+*******************************************************************************************************************/
+@media only screen and (max-width: 800px) {
+	.header-container {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100vw;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+	.left-side-header {
+		flex-basis: 100%;
+		align-self: flex-start;
+		margin: 5px;
+	}
+}
